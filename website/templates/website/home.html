@@ -1,0 +1,140 @@
+
+
+{% extends 'base.html' %}
+{% load static  %}
+{% block content %}
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark"    >
+        <div class="container">
+            <a href="#" class="navbar-brand">B&B Bam Bam</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navmenu" >
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#city" class="nav-link">The City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#location" class="nav-link">The Location</a>
+                    </li>
+                    <li class="#nav-item">
+                        <a href="#direction" class="nav-link">How to get here</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#activities" class="nav-link">Activities</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-lg-flex">
+                <div>
+                    <h2 class="text-light "  >Spend some Good Time in our <span class="text-warning">Villetta</span> !</h2>
+                    <p class="lead m-2">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+
+                    </p>
+                </div>
+                <img class="img-fluid  d-none d-sm-block" alt="r" src="{% static 'website/images/villa.jpeg'%}">
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- city -->
+    <section id='city' class="bg-primary text-light p-5 text-center text-sm-start">
+        <div class="container"><h4>Bergamo Culture Capital</h4>
+            <div class="d-lg-flex">
+
+                <img class="img-fluid w-100 d-none d-sm-block" alt="r" src="{% static 'website/images/bergamo-city.jpg'%}">
+
+                <div>
+                    <p class="lead p-2 ms-3">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="p-5">
+        <div class="container ">
+          <div class="row text-center ">
+              <div class="col-md">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body text-center">
+                          <div class="h1">
+                              <i class="bi bi-music-note-beamed"></i>                          </div>
+                          <h3 class="card-title mb-3">
+                              Relax
+                          </h3>
+                          <img class="card-img" alt="r" src="{% static 'website/images/bergamo-city.jpg'%}">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body text-center">
+                          <div class="h1">
+                              <i class="bi bi-moon"></i>
+                          </div>
+                          <h3 class="card-title mb-3">
+                              Get Some Rest
+                          </h3>
+                          <img class="card-img" alt="r" src="{% static 'website/images/bergamo-city.jpg'%}">
+                      </div>
+                  </div>              </div>
+              <div class="col-md">
+                  <div class="card bg-dark text-light">
+                      <div class="card-body text-center">
+                          <div class="h1">
+                              <i class="bi bi-egg-fried"></i>
+                          </div>
+                          <h3 class="card-title mb-3">
+                              Have Breakfast
+                          </h3>
+                          <img class="card-img" alt="r" src="{% static 'website/images/bergamo-city.jpg'%}">
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+
+
+
+    </section>
+
+
+{% endblock %}
+
